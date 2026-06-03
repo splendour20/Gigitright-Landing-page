@@ -10,14 +10,13 @@ function Footer() {
   }
 
   return (
-    <footer className="w-full px-10 md:px-16 pt-10 pb-6" style={{ backgroundColor: '#ffffff' }}>
+    <footer className="w-full px-6 md:px-16 pt-10 pb-6" style={{ backgroundColor: '#ffffff' }}>
 
       {/* Top Row */}
-      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-8">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 pb-8">
 
         {/* Left — Logo + Tagline */}
         <div className="flex flex-col gap-3 max-w-xs">
-          {/* Logo */}
           <div className="flex items-center gap-2">
             <img
               src="/Gigitright-Full-logo-blue.png"
@@ -25,8 +24,6 @@ function Footer() {
               className="h-7 w-auto"
             />
           </div>
-
-          {/* Tagline */}
           <p
             className="text-xs leading-relaxed"
             style={{ color: '#000000' }}
@@ -36,13 +33,13 @@ function Footer() {
           </p>
         </div>
 
-        {/* Right — Nav Links */}
-        <ul className="flex items-center gap-8">
+        {/* Nav Links */}
+        <ul className="flex flex-row flex-wrap gap-x-5 gap-y-3">
 
           {/* About Us — not clickable */}
           <li>
             <span
-              className="text-sm cursor-default"
+              className="text-xs cursor-default"
               style={{ color: '#374151' }}
             >
               About Us
@@ -55,7 +52,7 @@ function Footer() {
               href={APPLY_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm"
+              className="text-xs"
               style={{ color: '#374151' }}
               onMouseEnter={e => e.currentTarget.style.color = '#0071CE'}
               onMouseLeave={e => e.currentTarget.style.color = '#374151'}
@@ -69,7 +66,7 @@ function Footer() {
             <a
               href="#faqs"
               onClick={handleFAQScroll}
-              className="text-sm"
+              className="text-xs"
               style={{ color: '#374151' }}
               onMouseEnter={e => e.currentTarget.style.color = '#0071CE'}
               onMouseLeave={e => e.currentTarget.style.color = '#374151'}
@@ -84,7 +81,7 @@ function Footer() {
               href="https://mail.google.com/mail/?view=cm&to=hi@gigitright.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm"
+              className="text-xs"
               style={{ color: '#374151' }}
               onMouseEnter={e => e.currentTarget.style.color = '#0071CE'}
               onMouseLeave={e => e.currentTarget.style.color = '#374151'}
@@ -101,24 +98,19 @@ function Footer() {
       <div style={{ borderTop: '1px solid #E5E7EB' }} />
 
       {/* Bottom Row */}
-      <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-5">
-
-        {/* Left */}
+      <div className="flex flex-col md:flex-row items-center justify-between gap-3 pt-5">
         <p
-          className="text-xs"
+          className="text-xs text-center md:text-left"
           style={{ color: '#3f4145' }}
         >
           Built On Trust • Designed For Result
         </p>
-
-        {/* Right */}
         <p
-          className="text-xs"
+          className="text-xs text-center md:text-right"
           style={{ color: '#3f4145' }}
         >
           © 2026 Gigitright. All rights reserved.
         </p>
-
       </div>
 
     </footer>
