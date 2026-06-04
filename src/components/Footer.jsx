@@ -75,10 +75,17 @@ function Footer() {
             </a>
           </li>
 
-          {/* Contact — mailto */}
+          {/* Contact — mailto on mobile, Gmail on desktop */}
           <li>
             <a
               href="mailto:hi@gigitright.com"
+              onClick={(e) => {
+                const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+                if (!isMobile) {
+                  e.preventDefault()
+                  window.open('https://mail.google.com/mail/?view=cm&to=hi@gigitright.com', '_blank')
+                }
+              }}
               className="text-xs"
               style={{ color: '#374151' }}
               onMouseEnter={e => e.currentTarget.style.color = '#0071CE'}
