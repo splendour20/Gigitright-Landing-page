@@ -75,12 +75,10 @@ function Footer() {
             </a>
           </li>
 
-          {/* Contact — opens Gmail compose */}
+          {/* Contact — mailto */}
           <li>
             <a
-              href="https://mail.google.com/mail/?view=cm&to=hi@gigitright.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:hi@gigitright.com"
               className="text-xs"
               style={{ color: '#374151' }}
               onMouseEnter={e => e.currentTarget.style.color = '#0071CE'}
