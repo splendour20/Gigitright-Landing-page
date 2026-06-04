@@ -26,7 +26,7 @@ function EarlyAccess() {
   return (
     <section
       ref={sectionRef}
-      className="w-full py-24"
+      className="w-full py-6 md:py-24"
       style={{ backgroundColor: '#0071CE' }}
     >
       {/* Centered Container */}

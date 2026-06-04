@@ -31,7 +31,7 @@ function Struggle() {
   return (
     <section
       ref={sectionRef}
-      className="w-full px-6 md:px-16 py-16 bg-white"
+      className="w-full px-6 md:px-16 pt-4 md:pt-16 pb-16 bg-white"
     >
       {/* Heading */}
       <h2

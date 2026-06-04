@@ -41,7 +41,7 @@ function Hero() {
         className="bg-[#0071CE] w-full text-center pt-12 px-6"
         style={{
           clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0 100%)',
-          paddingBottom: '220px',
+          paddingBottom: 'clamp(120px, 15vw, 220px)',
         }}
       >
         {/* Heading with Animation */}
@@ -79,22 +79,22 @@ function Hero() {
           style={{ transitionDelay: '200ms' }}
         >
           <div className="mt-6">
-            <a
-              href={APPLY_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#FACC15] text-gray-900 font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
-            >
-              Apply For Early Access
-              <ArrowRight size={16} strokeWidth={2} />
-            </a>
-          </div>
+          <a
+            href={APPLY_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#FACC15] text-gray-900 font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+          >
+            Apply For Early Access
+            <ArrowRight size={16} strokeWidth={2} />
+          </a>
+        </div>
         </div>
       </section>
 
       {/* Hero Image — overlaps deep into blue with Animation */}
       <div
-        className={`relative z-10 max-w-3xl mx-auto px-6 -mt-48 transition-all duration-700 delay-300 transform ${
+        className={`relative z-10 max-w-3xl mx-auto px-6 -mt-24 md:-mt-32 transition-all duration-700 delay-300 transform ${
           isVisible ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-20 opacity-0 scale-95'
         }`}
         style={{ transitionDelay: '300ms' }}
@@ -102,12 +102,12 @@ function Hero() {
         <img
           src="/NEW-HERO.png"
           alt="Gigitright Hero"
-          className="w-full h-[420px] object-cover object-top rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-[1.02]"
+          className="w-full h-[280px] md:h-[420px] object-cover object-top rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-[1.02]"
         />
       </div>
 
       {/* Badges with Staggered Animation & Hover Effects */}
-      <div className="flex flex-wrap items-center justify-center gap-6 mt-8 pb-12 px-6">
+      <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mt-6 md:mt-8 pb-6 md:pb-12 px-6">
         {badges.map((badge, index) => (
           <div
             key={badge}

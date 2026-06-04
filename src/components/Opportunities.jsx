@@ -37,7 +37,7 @@ function Opportunities() {
   return (
     <section
       ref={sectionRef}
-      className="w-full px-6 md:px-16 py-20"
+      className="w-full px-6 md:px-16 pt-2 md:pt-20 pb-20"
     >
       {/* Heading */}
       <h2

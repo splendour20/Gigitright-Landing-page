@@ -63,7 +63,7 @@ function FAQ() {
   return (
     <section
       ref={sectionRef}
-      className="w-full py-24"
+      className="w-full py-12 md:py-24"
       style={{ backgroundColor: 'transparent' }}
     >
       {/* Centered Container */}

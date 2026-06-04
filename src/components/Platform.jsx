@@ -24,7 +24,7 @@ function Platform() {
   return (
     <section
       ref={sectionRef}
-      className="w-full px-6 md:px-16 py-24"
+      className="w-full px-6 md:px-16 py-12 md:py-24"
       style={{ backgroundColor: '#F0F4FA' }}
     >
       {/* Heading */}
@@ -75,18 +75,18 @@ function Platform() {
           {quotes.map((quote, index) => (
             <div
               key={quote}
-              className="flex items-center gap-4 px-6 py-5 rounded-2xl"
+              className="flex items-center gap-4 px-6 py-5 rounded-2xl transition-all duration-300 ease-out cursor-pointer hover:-translate-y-1 hover:shadow-lg"
               style={{
                 backgroundColor: '#ffffff',
                 border: '1px solid #E5E7EB',
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
-                transition: `opacity 0.9s ease ${0.45 + index * 0.15}s, transform 0.9s ease ${0.45 + index * 0.15}s`,
+                transition: `opacity 0.9s ease ${0.45 + index * 0.15}s, transform 0.9s ease ${0.45 + index * 0.15}s, box-shadow 0.3s ease, transform 0.3s ease`,
               }}
             >
               {/* Quote Icon */}
               <span
-                className="text-2xl font-serif leading-none"
+                className="text-2xl font-serif leading-none transition-all duration-300 ease-out group-hover:scale-110"
                 style={{ color: '#FACC15', flexShrink: 0 }}
               >
                 ❝
@@ -94,7 +94,7 @@ function Platform() {
 
               {/* Quote Text */}
               <p
-                className="text-sm md:text-base italic"
+                className="text-sm md:text-base italic transition-all duration-300 ease-out"
                 style={{ color: '#374151' }}
               >
                 {quote}
@@ -105,11 +105,11 @@ function Platform() {
 
         {/* Footer Text */}
         <p
-          className="text-center text-sm font-semibold mt-10"
+          className="text-center text-sm font-semibold mt-10 transition-all duration-300 ease-out hover:tracking-wide"
           style={{
             color: '#FACC15',
             opacity: isVisible ? 1 : 0,
-            transition: 'opacity 0.9s ease 0.9s',
+            transition: 'opacity 0.9s ease 0.9s, letter-spacing 0.3s ease',
           }}
         >
           Gigitright was built with freelancers exactly like you in mind.

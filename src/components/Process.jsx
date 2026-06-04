@@ -36,7 +36,7 @@ function Process() {
   return (
     <section
       ref={sectionRef}
-      className="w-full px-6 md:px-16 py-24"
+      className="w-full px-6 md:px-16 pt-8 md:pt-24 pb-24"
       style={{ backgroundColor: '#F0F4FA' }}
     >
       {/* Heading */}

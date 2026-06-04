@@ -47,7 +47,7 @@ const WhyJoin = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 px-4 bg-color = '#F0F4FA'">
+    <section ref={sectionRef} className="pt-4 md:pt-20 pb-20 px-4" style={{ backgroundColor: '#F0F4FA' }}>
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header with Animation */}

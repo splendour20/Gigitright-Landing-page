@@ -21,7 +21,7 @@ function CTA() {
   return (
     <section
       ref={sectionRef}
-      className="w-full py-32 px-6 text-center"
+      className="w-full py-16 md:py-32 px-6 text-center"
       style={{ backgroundColor: '#0071CE' }}
     >
 
